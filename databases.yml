@@ -1,0 +1,13 @@
+hosts: webservers
+remote_user: root
+
+tasks:
+  - name: Rename table foo to bar
+    postgresql_table:
+      table: foo
+      rename: bar
+
+  - name: Set owner to someuser
+    postgresql_table:
+      name: foo
+      owner: someuser
