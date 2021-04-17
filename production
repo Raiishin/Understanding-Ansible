@@ -1,1 +1,23 @@
 # inventory file for production servers
+
+# Adding ranges of hosts
+[webservers]
+www[01:50].example.com
+bar.example.com
+
+[dbservers]
+db01.production.example.com
+db02.production.example.com
+
+[appservers]
+app01.production.example.com
+app02.production.example.com
+app03.production.example.com
+
+# Group by Location
+[dc1]
+db01.test.example.com
+app01.test.example.com
+
+[dc2]
+db02.test.example.com
