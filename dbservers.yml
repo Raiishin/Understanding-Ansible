@@ -1,4 +1,6 @@
-hosts: webservers
+# playbook for dbserver tier
+
+hosts: dbservers
 remote_user: root
 
 tasks:
